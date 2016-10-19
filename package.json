@@ -1,0 +1,22 @@
+{
+  "name": "typescript_node_starter",
+  "version": "1.0.0",
+  "description": "opsie admin electron version!",
+  "main": "index.ts",
+  "scripts": {
+    "build": "node_modules/webpack/bin/webpack.js --config webpack.config.js --progress --profile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leo Jin",
+  "license": "MIT",
+  "dependencies": {
+    "@types/lodash": "^4.14.37",
+    "@types/node": "^6.0.45",
+    "lodash": "^4.16.4",
+    "node": "0.0.0"
+  },
+  "devDependencies": {
+    "ts-loader": "^0.9.4",
+    "typescript": "^2.0.3"
+  }
+}
