@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const fs = require('fs');
+const srcPath = './src';
 
 var nodeModules = {};
 fs.readdirSync('node_modules')
@@ -13,6 +14,11 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'build'),
         filename: 'server.js'
+    },
+    resolve: {
+        root: srcPath,
+        moduleDirectories: ['node_modules'],
+        extensions: ['', '.js', '.ts', '.tsx', '.css']
     },
     externals: nodeModules,
     module: {
